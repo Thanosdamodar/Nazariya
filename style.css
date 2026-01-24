@@ -1,0 +1,86 @@
+@import url(https://db.onlinewebfonts.com/c/558d263e1e0b21714ebd47598243cd47?family=Imager+Stylist);
+@import url(https://db.onlinewebfonts.com/c/38c8779936f85248fd4c113a0d66bf51?family=Imager);
+@import url(https://db.onlinewebfonts.com/c/7dd5f4bf5d38875ca1822a830b6e6fe4?family=Aptos);
+
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+.specific-font{
+    font-family: "Imager";
+}
+
+.nav-bar{
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.title{
+    font-family: "Imager Stylist";
+}
+
+.options{
+    /* border: 1px solid white; */
+    font-family: sans-serif;
+    display: flex;
+    justify-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.home-banner{
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    height: 780px;
+    box-sizing:border-box;
+    margin-bottom: 50px;
+}
+
+.home-banner-img{
+    position: absolute;
+    photo
+    width: 300px;
+}
+
+.banner-title{
+    font-family: "Imager";
+    text-align: center;
+    font-size: 160px;
+    margin: 10% auto;
+}
+
+.banner-top-desc{
+    /* border: 1px solid white; */
+    position: absolute;
+    right: 0px;
+    margin-right: 50px;
+}
+
+.banner-bottom-desc{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 20px;
+}
+
+.destinations{
+    /* border: 1PX SOLID WHITE; */
+    padding-left: 10px;
+    font-family:"Aptos";
+    font-size: 30px;
+}
+
