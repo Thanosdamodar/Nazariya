@@ -3,101 +3,259 @@
 @import url(https://db.onlinewebfonts.com/c/7dd5f4bf5d38875ca1822a830b6e6fe4?family=Aptos);
 
 :root{
-    --primary_color:black;
-    --secondary-color:white;
+    --pc:black;
+    --sc:white;
 }
 
 body{
     margin: 0px;
     box-sizing: border-box;
-    background-color: var(--secondary-color);
-    color: var(--primary_color);
+    background-color: var(--sc);
+    color: var(--pc);
     font-family: sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: var(--primary_color);
-}
-
-h1{
-    margin: 0;
-}
-
-.specific-font{
-    font-family: "Imager";
+    color: var(--pc);
 }
 
 .nav-bar{
-    /* border: 1px solid white; */
-    box-sizing: border-box;
-    color: var(--primary_color);
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
     width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: var(--sc);
+    z-index: 2;
 }
 
-.title{
+.nav-title{
     font-family: "Imager Stylist";
 }
-
-.options{
-    /* border: 1px solid white; */
-    font-family: sans-serif;
+.nav-opt{
     display: flex;
-    justify-items: center;
     gap: 20px;
-    color: var(--primary_color);
-    font-size: 20px;
+}
+
+.opt{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Aptos";
 }
 
 .home-banner{
-    position: relative;
-    border: 1px solid var(--secondary-color);
+    padding: 1px 0;
     width: 100%;
-    height: 780px;
-    box-sizing:border-box;
-    margin-bottom: 50px;
-    
+    box-sizing: border-box;
+    background: url(assets/nazariya_logo.jpeg) no-repeat center ;
 }
 
-.home-banner-img{
-    position: absolute;
-    width: 300px;
-}
-
-.home-banner-bg-img{
-    margin-left: 400px;
-    margin-top: 50px;
-    position: absolute;
-    z-index: -3;
-}
-
-.banner-title{
+.home-title{
     font-family: "Imager";
     text-align: center;
-    font-size: 160px;
-    margin: 10% auto;
+    font-size: 10em;
+    box-sizing: border-box;
 }
 
 .banner-top-desc{
-    /* border: 1px solid white; */
     position: absolute;
     right: 0px;
     margin-right: 50px;
 }
 
+.banner-top-desc h1{
+    margin: 0px;
+    padding-left: 50px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
 .banner-bottom-desc{
+    width: 150px;
     position: absolute;
     bottom: 0px;
     margin-left: 20px;
+    bottom: 20px;
 }
 
 .destinations{
-    /* border: 1PX SOLID WHITE; */
     padding-left: 10px;
     font-family:"Aptos";
     font-size: 30px;
+    margin: 50px 0px;
 }
 
+.dest-name h1{
+    margin:0px;
+    display: inline;
+}
+
+.footer{
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-media-links{
+    font-size: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.social-media-card{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.media-img{
+    height: 18px;
+}
+
+.blog-title{
+    font-size: 4.5em;
+    font-family: Imager;
+    padding-left: 30px;
+    position: sticky;
+    width: 100%;
+    top: 80px;
+    background-color: var(--sc);
+    box-sizing: border-box;
+}
+
+.blog-title h1{
+    margin: 0px;
+}
+
+.blog-img-container{
+    display: flex;
+}
+
+.blog-img{
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 25px;
+}
+.blog{
+    font-family: aptos;
+    font-size: 35px;
+    padding: 0px 300px;
+}
+
+
+/* Responsive Styles for Mobile */
+ @media (max-width: 768px) {
+    .nav-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+        background-color: var(--sc);
+        z-index: 10;
+    }
+
+    .nav-bar h1{
+        margin: 0px;
+    }
+
+    .nav-opt{
+        justify-content: space-evenly;
+
+    }
+
+    .opt{
+        font-size: 8px;
+        font-weight: bolder;
+    }
+
+    .home-banner{
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center children along the vertical axis */
+
+        background: url(assets/nazariya_logo.jpeg) no-repeat; /* Shorthand, remove center for manual position */
+        height: 50vh; 
+        
+        background-size: 250px;
+        background-position: 50% 50%;
+        position:relative;
+        box-sizing: border-box;
+    }
+
+    .home-title{
+        font-size: 40px;
+    }
+
+    .banner-top-desc{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .banner-top-desc h1{
+        padding-left: 0px;
+        font-size: 30px;
+    }
+
+    .banner-top-desc p{
+        font-size: 10px;
+    }
+
+    .banner-bottom-desc{
+        right: 10px;
+        text-align: right;
+
+    }
+
+    .destinations{
+        font-size: 20px;
+    }
+
+    .footer{
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .social-media-links{
+        gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+
+    .blog-title{
+        text-align: center;
+        font-size: 1.75em;
+        font-family: Imager;
+        padding: 0px;
+        top: 76px;
+    }
+
+    .blog-title h1{
+        margin: 0px;
+    }
+
+    .blog-img{
+        height: 200px;
+    }
+
+    .blog{
+        font-size: 15px;
+        padding: 0 40px;
+        text-align: justify;
+    }
+ }
