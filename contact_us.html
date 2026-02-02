@@ -42,16 +42,19 @@ If a place has ever made your heart pause, you belong here.</h2>
 
         <div class="community_form">
             <h1 style="text-align: center;">JOIN US...</h1>
-            <form action="">
+            <form method="post" action="" name="contact-us-form">
                 <label for="" class="com-label">NAME</label>
-                <input class="com_input_field" type="text" required><br>
+                <input class="com_input_field" name="your-name" type="text" required><br>
 
                 <label for="" class="com-label">EAMIL</label>
-                <input class="com_input_field" type="email" required><br>
+                <input class="com_input_field" name="your-email" type="email" required><br>
 
                 <label for=""class="com-label">MOBILE NO.</label>
-                <input class="com_input_field" type="tel"><br>
-                <button class="com_submit_button" type="submit">JOIN</button>
+                <input class="com_input_field" name="your-mobile-no" type="tel"><br>
+                <button class="com_submit_button" type="submit" value="submit" id="submit">JOIN</button>
+                <!-- <input type="submit" name="submit" id="submit"> -->
+                <script src="google-sheet.js"></script>
+                
             </form>
         </div>
     </div>
