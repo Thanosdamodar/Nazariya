@@ -134,6 +134,10 @@ hr{
 }
 
 /*Blog*/
+.blog-container{
+    width: 100%;
+}
+
 .blog-title{
     font-size: 4.5em;
     font-family: Imager;
@@ -155,7 +159,6 @@ hr{
 }
 
 .blog-img{
-    width: 100%;
     margin: 20px auto;
     border-radius: 25px;
     margin-bottom: 60px;
@@ -353,11 +356,12 @@ hr{
 
     .blog-img{
         height: 200px;
+        width: 80%;
     }
 
     .blog{
         font-size: 15px;
-        padding: 0 40px;
+        padding: 0 10%;
         text-align: justify;
     }
 
