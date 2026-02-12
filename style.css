@@ -1,0 +1,475 @@
+@import url(https://db.onlinewebfonts.com/c/558d263e1e0b21714ebd47598243cd47?family=Imager+Stylist);
+@import url(https://db.onlinewebfonts.com/c/38c8779936f85248fd4c113a0d66bf51?family=Imager);
+@import url(https://db.onlinewebfonts.com/c/7dd5f4bf5d38875ca1822a830b6e6fe4?family=Aptos);
+
+:root{
+    --pc:black;
+    --sc:white;
+}
+
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--sc);
+    color: var(--pc);
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--pc);
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: lightgrey;
+    margin-left: auto;
+    width: 60%;
+}
+
+/*Navigation Bar*/
+.nav-bar{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: var(--sc);
+    z-index: 2;
+}
+
+.nav-title{
+    font-family: "Imager Stylist";
+}
+.nav-opt{
+    display: flex;
+    gap: 20px;
+}
+
+.opt{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Aptos";
+}
+
+/*Banner*/
+.home-banner{
+    padding: 1px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: url(assets/nazariya_logo.jpeg) no-repeat center ;
+}
+
+.home-title{
+    font-family: "Imager";
+    text-align: center;
+    font-size: 10em;
+    box-sizing: border-box;
+}
+
+.banner-top-desc{
+    position: absolute;
+    left: 20px;
+    margin-right: 50px;
+}
+
+.banner-top-desc h1{
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.banner-bottom-desc{
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    margin-left: 20px;
+    bottom: 20px;
+}
+
+/*Destination*/
+.destinations{
+    padding-left: 10px;
+    font-family:"Imager";
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+.dest-name h1{
+    margin:0px;
+    display: inline;
+}
+
+/*Footer*/
+.footer{
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-media-links{
+    font-size: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+
+.social-media-card{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.media-img{
+    height: 18px;
+}
+
+/*Blog*/
+.blog-container{
+    width: 100%;
+}
+
+.blog-title{
+    font-size: 4.5em;
+    font-family: Imager;
+    padding-left: 30px;
+    position: sticky;
+    width: 100%;
+    top: 80px;
+    background-color: var(--sc);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.blog-title h1{
+    margin: 0px;
+}
+
+.blog-img-container{
+    display: flex;
+}
+
+.blog-img{
+    margin: 20px auto;
+    border-radius: 25px;
+    margin-bottom: 60px;
+}
+.blog{
+    font-family: aptos;
+    font-size: 35px;
+    padding: 0px 300px;
+}
+
+/* Lightbox Background */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000; /* Above everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+/* The expanding image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-carousel img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.thumbnail-carousel img:hover, .thumbnail-carousel img.active {
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+/* Class to show the lightbox */
+.lightbox.active {
+    display: flex;
+}
+
+/* Return to Blog Button Styling */
+.return-btn {
+    position: absolute; /* Fixed relative to the lightbox */
+    top: 30px;          /* Vertical padding from top */
+    left: 30px;         /* Horizontal padding from left */
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-family: 'Aptos', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    z-index: 2001; /* Stay above everything else */
+}
+
+.return-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+/*Member's Pannel*/
+.member_pannel{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10%;
+    justify-content: space-evenly;
+}
+
+.member_card{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.member_info{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap:30px;
+}
+
+.member_img{
+    height: 100%;
+    border-radius: 30px;
+    filter: grayscale(100%);
+}
+
+.member_desc{
+    font-size: 25px;
+    font-family: Aptos;
+    
+}
+
+/* Contact us */
+.community_pannel{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+    height: 500px;
+}
+
+.community_message{
+    border-radius: 25px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.community_form{
+    padding: 0 20px;
+    border-radius: 25px;
+    width: 550px;
+    font-family: Aptos;
+    text-align: right;
+    align-items: center;
+    height: 400px;
+}
+
+.com-label{
+    font-size: 25px;
+}
+
+.com_input_field{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 0 30px 10px;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+.com_submit_button{
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: var(--pc);
+    color: var(--sc);
+}
+
+
+/* Responsive Styles for Mobile */
+ @media (max-width: 768px) {
+    .nav-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+        background-color: var(--sc);
+        z-index: 10;
+    }
+
+    .nav-bar h1{
+        margin: 0px;
+    }
+
+    .nav-opt{
+        justify-content: space-evenly;
+
+    }
+
+    .opt{
+        font-size: 8px;
+        font-weight: bolder;
+    }
+
+    .home-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background: url(assets/nazariya_logo.jpeg) no-repeat;
+        height: 55vh; 
+        
+        background-size: 250px;
+        background-position: 50% 70%;
+        position:relative;
+        box-sizing: border-box;
+    }
+
+    .home-title{
+        padding-top: 80px;
+        font-size: 40px;
+    }
+
+    .banner-top-desc{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .banner-top-desc h1{
+        padding-left: 0px;
+        font-size: 30px;
+    }
+
+    .banner-top-desc p{
+        font-size: 10px;
+    }
+
+    .banner-bottom-desc{
+        right: 10px;
+        text-align: right;
+    }
+
+    .destinations{
+        font-size: 20px;
+    }
+
+    .footer{
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .social-media-links{
+        gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+
+    .blog-title{
+        text-align: center;
+        font-size: 1.75em;
+        font-family: Imager;
+        padding: 0px;
+        top: 76px;
+    }
+
+    .blog-title h1{
+        margin: 0px;
+    }
+
+    .blog-img{
+        height: 200px;
+        width: 80%;
+    }
+
+    .blog{
+        font-size: 15px;
+        padding: 0 10%;
+        text-align: justify;
+    }
+
+    .member_pannel{
+        padding: 2%;
+    }
+    .member_desc{
+        font-size: 10px;
+    }
+
+    .member_img{
+        height: 60%;
+        font-size: 10px;
+    }
+
+    .member_info{
+        height: 100%;
+    }
+
+    .member_card{
+        height: 350px;
+    }
+
+    .community_pannel{
+        display: inline;
+    }
+
+    .community_message{
+        text-align: center;
+        width: 350px;
+        padding:10px 10px;
+    }
+
+    .community_form{
+        width: 325px;
+    }
+
+    .com-label{
+        font-size: 13px;
+    }
+ }
