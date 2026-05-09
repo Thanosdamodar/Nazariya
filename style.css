@@ -41,8 +41,13 @@ hr{
     z-index: 2;
 }
 
+/* .nav-bar:hover{
+    background-color: #ffffff88;
+} */
+
 .nav-title{
-    font-family: "Imager Stylist";
+    font-family: Imager;
+    font-size: 15px;
 }
 .nav-opt{
     display: flex;
@@ -52,7 +57,7 @@ hr{
 .opt{
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 15px;
     font-family: "Aptos";
 }
 
@@ -166,7 +171,7 @@ hr{
 .blog{
     font-family: aptos;
     font-size: 35px;
-    padding: 0px 300px;
+    padding: 0px 135px;
 }
 
 /* Lightbox Background */
