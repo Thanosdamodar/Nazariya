@@ -39,6 +39,7 @@ hr{
     padding: 0px 20px;
     background-color: var(--sc);
     z-index: 2;
+    /* border: 1px solid black; */
 }
 
 /* .nav-bar:hover{
@@ -48,10 +49,24 @@ hr{
 .nav-title{
     font-family: Imager;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    width: 33%;
+    /* border: 1px solid red; */
+}
+.page-title h1{
+    font-family: Imager; 
+    font-size:80px; 
+    /* border: 1px solid blue; */
+    margin:10px 0px;
+    font-weight: 500;
 }
 .nav-opt{
     display: flex;
     gap: 20px;
+    width: 33%;
+    justify-content: flex-end;
+    /* border: 1px solid greenyellow; */
 }
 
 .opt{
@@ -331,6 +346,41 @@ hr{
     color: var(--sc);
 }
 
+/* Destination Page */
+.page-display-section{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 100px;
+    align-items: center;
+}
+
+.left-display-section{
+    /* border: 1px solid yellowgreen; */
+    font-family: Imager;
+    font-weight: 900;
+    font-size: 35px;
+
+}
+
+.left-display-section h1{
+    margin: 15px 0px;
+}
+
+.right-display-section{
+    width: 700px;
+    text-align: center;
+    /* border: 1px solid blue; */
+    font-size: 25px;
+}
+
+.right-display-section h1{
+    font-family: Imager;
+}
+
+.right-display-section p{
+    font-family: Aptos;
+}
 
 /* Responsive Styles for Mobile */
  @media (max-width: 768px) {
