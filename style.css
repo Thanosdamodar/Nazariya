@@ -63,9 +63,9 @@ hr{
     height: auto;
 }
 
-.page-title{
-    /* border: 1px solid red; */
-}
+/* .page-title{
+    border: 1px solid red;
+} */
 
 .page-title h1{
     font-family: Imager; 
@@ -428,9 +428,9 @@ input:focus{
 }
 
 /* Featured Collection */
-.featured-collection{
+/* .featured-collection{
 
-}
+} */
 
 .feature-collection-title h2{
     width: 90%;
@@ -447,9 +447,9 @@ input:focus{
     font-size: 35px;
 }
 
-.more-from-community{
+/* .more-from-community{
 
-}
+} */
 
 .more-from-community-title h2{
     width: 90%;
