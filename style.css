@@ -354,7 +354,29 @@ hr{
     margin: 0 100px;
     font-family: Imager;
     font-weight: 900;
-    font-size: 95px;
+}
+
+.section-layer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 55px;
+}
+
+.section-layer h1{
+    margin: 0px;
+}
+
+.section-layer-img-container{
+    height: 350px;
+    width: 800px;
+}
+
+.section-layer-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 80px;
 }
 
 .page-para-section{
@@ -365,7 +387,44 @@ hr{
     font-family: Aptos;
     align-items: center;
     gap: 80px;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.search-bar{
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 45px;
+    margin: 0px auto;
+    border-radius: 50px;
+}
+
+.search-bar input{
+    width: 90%;
+    border: 1px solid lightgrey;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    margin: 10px 0px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search-bar button{
+    width: 15%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.search-bar img{
+    margin: 0 10px;
 }
 
 /* Featured Collection */
@@ -375,7 +434,8 @@ hr{
 
 .feature-collection-title h2{
     width: 90%;
-    /* text-align: center;  */
+    font-weight: 300;
+    text-align: center; 
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
     margin: 10px 5% 20px; 
@@ -384,7 +444,7 @@ hr{
 .feature-collection-title h2 span{
     background:#fff; 
     padding:0 10px; 
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .more-from-community{
@@ -393,7 +453,8 @@ hr{
 
 .more-from-community-title h2{
     width: 90%;
-    text-align: right; 
+    font-weight: 300;
+    text-align: center; 
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
     margin: 10px 5% 20px; 
@@ -402,7 +463,7 @@ hr{
 .more-from-community-title h2 span{
     background:#fff; 
     padding:0 10px; 
-    font-size: 45px;
+    font-size: 35px;
 }
 
 /* Responsive Styles for Mobile */
