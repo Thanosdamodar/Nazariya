@@ -436,6 +436,57 @@ input:focus{
     margin: 0 10px;
 }
 
+.itinerary{
+    padding: 10px 5%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.itinerary-title h2{
+    width: 100%;
+    font-weight: 300;
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.0em;
+    margin: 50px 0px;
+}
+
+.itinerary-title h2 span{
+    background:#fff; 
+    padding:0 10px; 
+    font-size: 55px;
+}
+
+.itinerary-boxes-row{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+
+.itinerary-box{
+    width: 20%;
+    padding: 20px 10px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.itinerary-box h1{
+    font-family: Imager;
+    font-weight: 300;
+}
+
+.itinerary-img-container{
+    width: 30%;
+    margin: 0px auto;
+}
+
+.itinerary-img-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
 .share-your-story{
     /* border: 1px solid red; */
     width: 100%;
