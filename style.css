@@ -564,13 +564,13 @@ input:focus{
 }
 
 .image-display-row-container{
+    position: relative;
     height: 300px;
-    filter: grayscale();
-    transition: 0.15s ease-in;
 }
 
-.image-display-row-container:hover{
-    filter: none;
+.image-display-row-container:hover .image-display-row-container_p{
+    opacity: 1;
+    visibility: visible;
 }
 
 .image-display-row-container img{
@@ -578,6 +578,23 @@ input:focus{
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.image-display-row-container_p{
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    font-size: 20px;
+    font-family: Imager;
+    color: white;
+    /* display: none; */
+    /* Changed: Replaced display: none with these two properties */
+    opacity: 0;
+    visibility: hidden;
+    
+    /* Added: Explicitly tell the transition to monitor these properties */
+    transition: opacity 0.15s ease-in-out, visibility 1s ease-in-out;
+    z-index: 5;
 }
 
 .more-from-community{
@@ -598,6 +615,32 @@ input:focus{
     background:#fff; 
     padding:0 10px; 
     font-size: 35px;
+}
+
+.demo-collection-display-pannel{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 700px;
+}
+
+.demo-collection-display-pannel img{
+    width: 80%;
+    height: 100%;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
+.demo-collection-display-pannel h1{
+    position: absolute;
+    top: 120px;
+    /* right: 0px; */
+    width: 100%;
+    font-size: 35px;
+    font-family: Imager;
+    font-weight: 100;
+    color: white;
 }
 
 /* Responsive Styles for Mobile */
