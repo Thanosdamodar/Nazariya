@@ -175,7 +175,10 @@ hr{
 }
 
 .blog-img-container{
-    display: flex;
+    /* display: flex; */
+    text-align: center;
+    font-family: Imager;
+    font-size: xx-large;
 }
 
 .blog-img{
@@ -553,9 +556,9 @@ input:focus{
     font-size: 35px;
 }
 
-.image-display{
-    /* border: 1px solid red; */
-}
+/* .image-display{
+    border: 1px solid red;
+} */
 
 .image-display-row{
     display: flex;
