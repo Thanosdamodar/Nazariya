@@ -188,7 +188,7 @@ hr{
 }
 .blog{
     font-family: aptos;
-    font-size: 35px;
+    font-size: 20px;
     padding: 0px 135px;
 }
 
@@ -563,12 +563,19 @@ input:focus{
 .image-display-row{
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     margin: 15px 0px 10px;
 }
 
 .image-display-row-container{
     position: relative;
     height: 300px;
+    transform-origin: center center;
+    transition: 0.5s ease-in-out;
+}
+
+.image-display-row-container:hover{
+    height: 375px;
 }
 
 .image-display-row-container:hover .image-display-row-container_p{
@@ -587,7 +594,7 @@ input:focus{
     position: absolute;
     bottom: 0px;
     right: 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Imager;
     color: white;
     /* display: none; */
